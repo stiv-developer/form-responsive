@@ -213,6 +213,11 @@ form textarea:focus {
 
 }
 
+.error-border {
+    border: 1px solid red !important;
+    margin-bottom: 5px;
+}
+
 
 @media only screen and (min-width: 1024px) {
 
