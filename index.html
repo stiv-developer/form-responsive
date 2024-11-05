@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Form</title>
+  <!-- ESTILOS CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FONTS GOOGLE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <form id="formulario">
+        <h1>Contact Us</h1>
+        <div class="complete-name">
+          <div class="first-name">
+            <label for="fname">First Name *</label>
+            <input type="text" id="firtsname" name="firstname">
+          </div>
+          <div class="last-name">
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lastname" name="lastname">
+          </div>
+        </div>
+        <div class="group-email">
+          <label for="lemail">Email Address *</label>
+          <input type="text" id="email" name="email">
+        </div>
+
+        <div class="radio-required">
+          <label for="ltype">Query Type *</label>
+          <div class="group-radio">
+            <div class="radio">
+              <input type="radio" id="generalEnquiry" name="type">
+              <label for="generalEnquiry">General Enquiry</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="supportRequest" name="type">
+              <label for="supportRequest">Support Request</label>
+            </div>
+          </div>
+        </div>
+        <div class="group-message">
+          <label for="lmessage">Message *</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <div class="checkbox-terms">
+          <div class="checkbox-group">
+            <input type="checkbox" id="terms">
+            <label for="">I consent to being contacted by the team *</label>
+          </div>
+        </div>
+
+        <input class="submit" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <div id="successful-message" class="successful-message">
+    <h3>Message Sent!</h3>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
